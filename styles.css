@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url(images/bg-mobile.svg) hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.row {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.logo {
+    margin: 2rem 0 3rem;
+    width: 130px;
+    text-align: start;
+}
+
+.hero-text {
+    margin-bottom: 2rem;
+}
+.btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1rem 5rem;
+    background-color: #fff;
+    color: #707070;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.mockups {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.socials {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.socials i {
+    outline: 1px solid #fff;
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    padding: 9.2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .row {
+        display: grid;
+        /* gap: 4rem; */
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+
+    .col {
+        padding: 4rem;
+    }
+
+    .socials {
+        text-align: right;
+        margin: unset;
+    }
+
+    .socials i {
+        padding: 16px;
+        width: 50px;
+        height: 50px;
+    }
+}
